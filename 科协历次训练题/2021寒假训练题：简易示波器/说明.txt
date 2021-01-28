@@ -7,10 +7,25 @@
 DAC参考stm32f407写的简易函数发生器
 触摸屏按cube工程里面的方式配置FMC,PB5背光
 
+模板：
+LCD点亮和触摸
+DAC_DMA
+
+
 2.串口
 USART1 cube里面配的有问题
 先拉PA9和PA10，再开USART，这样配出来是那两个脚
 如果时钟树和引脚都配对了，串口还没反应
 那就换个口插（另外这种情况会不会搜不到串口？）
 
-3.
+模板：print
+
+3.ADC
+水星板引脚着实恶心
+单片机边上的ADC貌似是PA4？（试过再来改）
+HAL_ADC_Start_DMA最后一个参数length需要大于1，否则不断中断会卡死CPU
+采集length个数据以后才会中断
+
+参考文章：
+https://www.stm32cube.com/article/37
+
