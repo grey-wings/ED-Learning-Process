@@ -29,3 +29,11 @@ HAL_ADC_Start_DMA最后一个参数length需要大于1，否则不断中断会�
 参考文章：
 https://www.stm32cube.com/article/37
 
+4.蓝牙
+
+5.Python蓝牙读取
+
+6.Python串口读取
+
+7.Python动图绘制
+matplotlib.animation
