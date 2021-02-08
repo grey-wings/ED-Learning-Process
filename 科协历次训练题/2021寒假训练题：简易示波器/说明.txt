@@ -37,3 +37,4 @@ https://www.stm32cube.com/article/37
 
 7.Python动图绘制
 matplotlib.animation
+对axes和plt的理解：https://zhuanlan.zhihu.com/p/93423829
