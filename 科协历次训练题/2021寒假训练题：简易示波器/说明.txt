@@ -22,12 +22,21 @@ USART1 cube里面配的有问题
 
 3.ADC
 水星板引脚着实恶心
-单片机边上的ADC貌似是PA4？（试过再来改）
 HAL_ADC_Start_DMA最后一个参数length需要大于1，否则不断中断会卡死CPU
 采集length个数据以后才会中断
 
 参考文章：
 https://www.stm32cube.com/article/37
+
+避雷：ADC中断发不出来
+（1）检查一遍时钟（虽然不知道有没有关系，但有时候时钟确实不是HSE）
+（2）检查有没有开中断
+（3）检查DMA循环模式
+（4）Continuous Conversion Mode和DMA Continuous Requests要Enable
+
+Cube改完设置一定要保存！！！
+Cube改完设置一定要保存！！！
+Cube改完设置一定要保存！！！
 
 4.蓝牙
 
