@@ -5,6 +5,12 @@
 
 1.DAC和触屏模块
 DAC参考stm32f407写的简易函数发生器
+
+debug：
+（1）DAC0电压：
+检查DAC的Trigger有没有设置TIM
+检查TIM的Trigger Event Selection有没有设置Upgrade EVent
+
 触摸屏按cube工程里面的方式配置FMC,PB5背光
 
 模板：
@@ -32,7 +38,7 @@ https://www.stm32cube.com/article/37
 （1）检查一遍时钟（虽然不知道有没有关系，但有时候时钟确实不是HSE）
 （2）检查有没有开中断
 （3）检查DMA循环模式
-（4）Continuous Conversion Mode和DMA Continuous Requests要Enable
+（4）Continuous Conversion Mode和DMA Continuous Requests要Enable，否则发不出来。
 （5）DAC_DMA用Half Word，否则连续采样隔一个出一个0，最终电压会减半。
 （6）不要用CHANNEL_11，PC1是蜂鸣器，低电平响。
 
