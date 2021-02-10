@@ -43,6 +43,7 @@ https://www.stm32cube.com/article/37
 （5）DAC_DMA用Half Word，否则连续采样隔一个出一个0，最终电压会减半。
 （6）不要用CHANNEL_11，PC1是蜂鸣器，低电平响。
 （7）串口重新插一遍
+（8）有没有连线/连线有没有错
 
 Cube改完设置一定要保存！！！
 Cube改完设置一定要保存！！！
