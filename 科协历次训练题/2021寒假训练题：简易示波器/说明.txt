@@ -5,9 +5,10 @@
 
 1.DAC和触屏模块
 DAC参考stm32f407写的简易函数发生器
+单片机实数用float，double会有一些bug
 
 debug：
-（1）DAC0电压：
+（1）DAC输出电压为0：
 检查DAC的Trigger有没有设置TIM
 检查TIM的Trigger Event Selection有没有设置Upgrade EVent
 
