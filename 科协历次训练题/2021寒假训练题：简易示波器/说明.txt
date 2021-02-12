@@ -62,9 +62,23 @@ Cube改完设置一定要保存！！！
 4.蓝牙
 
 5.Python蓝牙读取
+暂时不打算做了
 
 6.Python串口读取
+见python工程文件
+因为碰到的问题和用到的功能都不是很多
+
+避雷：
+1.字符串处理无效：python字符串是不可变类型，处理函数必须赋给一个变量才行
 
 7.Python动图绘制
-matplotlib.animation
-对axes和plt的理解：https://zhuanlan.zhihu.com/p/93423829
+//matplotlib.animation
+//对axes和plt的理解：https://zhuanlan.zhihu.com/p/93423829
+
+本次采用pyqtgraph绘图
+虽然这个库第一次见
+但是文档中介绍还不错
+也可以配合UI库
+
+PyQt5的配置见csdn博客
+bug修不好就重开工程
