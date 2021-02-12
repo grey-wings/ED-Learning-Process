@@ -70,6 +70,7 @@ Cube改完设置一定要保存！！！
 
 避雷：
 1.字符串处理无效：python字符串是不可变类型，处理函数必须赋给一个变量才行
+2.如果执行效果乱七八糟，可能是因为下了serial库。正确的操作是下载pyserial库再import serial.
 
 7.Python动图绘制
 //matplotlib.animation
