@@ -1,0 +1,1 @@
+lanqiao_8thcompetition_0402_1\startup_stm32g431xx.o: startup_stm32g431xx.s
